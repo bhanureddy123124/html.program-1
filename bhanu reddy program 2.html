@@ -1,0 +1,66 @@
+[8:31 am, 15/09/2022] +91 93987 89351: <html>
+<head>
+<meta charset="utf-8" />
+<title>Guess the Number!</title>
+<script type="text/javascript">
+  var number = generateNewValue();
+  
+  function generateNewValue(){
+    return Math.floor(1000*Math.random())+1;
+  }
+  
+  function guess(){
+    if (document.getElementById("playerNumber").value == 500 || document.getElementById("playerNumber").value.trim() == "" || isNaN(document.getElementById("playerNumber").value)){
+      alert("guess is correct");
+      document.getElementById("playerNumber").focus();
+      return false;
+    }
+    if (parseInt(document.getElementById("playerNumber").value) > number){
+      alert("Too high\n\nTry again.");
+    }else if (parseInt(document.getElementById("playerNumber").value) < number){
+      alert("Too low\n\nTry again…
+[8:31 am, 15/09/2022] +91 93987 89351: <html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Solution 11.2</title>
+		<script type = "text/javascript">
+			function printNow()
+			{
+				var curr = new Date();
+				window.alert("The time and date are: " + curr.toString());
+			}
+ 
+			function printYesterday() 
+			{
+				var yesterday = new Date();
+				yesterday.setTime(yesterday.valueOf() - 24 * 60 * 60 * 1000);
+				window.alert("24 hours ago, the time and date were: " + yesterday.toString());
+			}
+ 
+			function printTenYears()
+			{	
+				var tenYears = new Date();
+				tenYears.setTime(tenYears.valueOf() - 10 * 365 * 24 * 60 * 60 * 1000);
+				window.alert("10 years ago, the time and date were: " + tenYears.toString());
+			}
+ 
+			function printOneWeek()
+			{	
+				var oneWeek = new Date();
+				oneWeek.setTime(oneWeek.valueOf() + 7 * 24 * 60 * 60 * 1000);
+				window.alert("In one week, the time and date will be: " + oneWeek.toString());
+			}
+		</script>
+	</head>
+ 
+	<body>
+		<form action = "">
+		<div>
+			<input type="button" value="Now" onclick="printNow()" />
+			<input type="button" value="Yesterday" onclick="printYesterday()" />
+			<input type="button" value="Ten Years Ago" onclick="printTenYears()" />
+			<input type="button" value="In One Week" onclick="printOneWeek()" />
+		</div>
+		</form>
+	</body>
+ 
+</html>
